@@ -25,8 +25,8 @@
   * @author: Nick Baker
   * @link: http://www.webtechnick.com
   */
-App::import('Vendor', 'FileUpload.uploader');
-require_once(dirname(__FILE__) . DS . '..' . DS . '..' . DS . 'config' . DS . 'file_upload_settings.php');
+require_once(dirname(dirname(dirname(__FILE__))) . DS . 'Lib' . DS . 'uploader.php');
+require_once(dirname(dirname(dirname(__FILE__))) . DS . 'Config' . DS . 'file_upload_settings.php');
 class FileUploadBehavior extends ModelBehavior {
   
   /**
